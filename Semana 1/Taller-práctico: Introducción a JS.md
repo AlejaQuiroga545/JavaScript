@@ -96,6 +96,8 @@ console.log(continuar);
 ``` 
 <img src="https://github.com/user-attachments/assets/b29f4fa0-9ab2-4624-81ea-421fd4187873" height="110"> ![image](https://github.com/user-attachments/assets/0403f050-8883-4479-afa6-1560f82d8f96) ![image](https://github.com/user-attachments/assets/fd81fe9e-ea1f-4f7d-a9bf-615435af41e0)
 
+---  
+
 ## Parte 4: Operadores 🥸
 #### 4.1 Declara dos variables numéricas. Realiza y muestra los resultados de las siguientes operaciones: suma, resta, multiplicación, división y módulo.
 ```javascript
@@ -137,3 +139,127 @@ console.log(false || true);  // Uno basta para que sea true
 console.log(!true);          // Niega el valor de true
 ```
 ![image](https://github.com/user-attachments/assets/324a1769-3945-4b30-9d61-9c23755470f6)
+
+---  
+
+## Parte 5: Condicionales 🤯
+#### 5.1 Crea un programa que pida al usuario un número y muestre en consola si es mayor, menor o igual a 10.
+```javascript
+let numero = prompt("Hola, por favor ingresa un número 😊");
+
+if (numero > 10) {
+  console.log("Tu número es mayor que 10 🫠");
+} else if (numero < 10) {
+  console.log("Tu número es menor que 10 😳");
+} else {
+  console.log("Tu número es igual a 10 😌");
+}
+```
+![image](https://github.com/user-attachments/assets/7aee7dbc-0fa1-4952-9423-6d02203bf350) ![image](https://github.com/user-attachments/assets/9a8fe059-3392-4144-848b-fa3813f2c96a)
+
+
+
+#### 5.2 Crea un programa que solicite el nombre de un usuario y compare si se llama "Admin". Si es así, muestra un mensaje de bienvenida especial, de lo contrario, un mensaje genérico.
+```javascript
+let nombre = prompt("Hola, déjanos saber... ¿Cuál es tu nombre? ​😊​");
+
+if (nombre == "Admin") {
+  console.log("¡Bienvenid@, has ingresado en tu rol de administrador! 😎");
+} else {
+  console.log("Hola " + nombre + ", bienvenid@ a nuestro website. 😉");
+}
+```
+![image](https://github.com/user-attachments/assets/fbd7e364-c27a-48a6-9671-26c0ffddd1ae)  ![image](https://github.com/user-attachments/assets/62e4c097-3eee-453a-b511-3464f527fac1)  
+![image](https://github.com/user-attachments/assets/1dec9d44-9ccc-48b6-99e0-887b4f4e2ba3)  ![image](https://github.com/user-attachments/assets/efd928a3-9d10-4ce0-b852-c1186d253d03)
+
+
+
+
+#### 5.3 Usa el operador ternario para mostrar si un número ingresado es par o impar.
+El operador ternario es  `condición ? valorSiEsVerdad : valorSiEsFalso`
+```javascript
+let num = prompt("Hola, por favor ingresa un número ☺️");
+
+let resultado = (num % 2 === 0) ? "Tu número es par 🤠" : "Tu número es impar 🤠";
+console.log(resultado);
+```
+![image](https://github.com/user-attachments/assets/08273756-62e1-47ee-b054-9a0352122cdd) ![image](https://github.com/user-attachments/assets/79d5a957-4fc7-4dcb-a3ae-baed6637a504)
+
+---  
+
+## Parte 6: Consola del Navegador 🤠
+6.1 Muestra diferentes tipos de mensajes en la consola:
+
+**Mensaje informativo `console.info`**
+```javascript
+console.info("Hola, este es un mensaje informativo. ⚡");
+```
+![image](https://github.com/user-attachments/assets/8521a38b-5d0a-462a-a9e5-e699ec19cb83)
+
+**Mensaje de advertencia `console.warn`**
+```javascript
+console.warn("⚠️ Este es un mensaje de advertencia.");
+```
+![image](https://github.com/user-attachments/assets/80cea3f3-dd01-486f-8ec2-cadb87516eed)
+
+**Mensaje de error `console.error`**
+```javascript
+console.error("❌ ¡Oops! Algo salió mal.");
+```
+![image](https://github.com/user-attachments/assets/8c89842b-a739-4901-9d65-9af4eea3190d)
+
+**Grupo de mensajes `console.group` y `console.groupEnd`**
+```javascript
+console.group("Datos para registrarte 🚀");
+console.log("Nombre completo");
+console.log("Número de identificación");
+console.log("Correo electrónico");
+console.groupEnd();
+```
+![image](https://github.com/user-attachments/assets/d5333a15-3fa3-45c5-b560-2fd9fe226d26)
+
+**Tiempo que tarda un bloque de código en ejecutarse `console.time` y `console.timeEnd`**
+```javascript
+console.time("Tiempo de respuesta 👀");
+console.log("Ejecutando prueba de efectividad de mi sistema... ⌛");
+console.timeEnd("Tiempo de respuesta 👀");
+```
+![image](https://github.com/user-attachments/assets/bb44a0a3-14a1-4d68-b119-1ef43361a1f1)
+
+---
+
+## Parte 7: Comentarios 💭
+#### 7.1 Escribe un pequeño bloque de código donde utilices comentarios de una línea y de varias líneas para explicar lo que hace cada parte.
+```javascript
+// Creamos un programa para verificar si mi usuario es administrador 😊
+
+/*
+  Paso 1
+  Usamos prompt() para pedirle a nuestro usuario su nombre.
+  El valor ingresado se guarda en la variable "nombre".
+*/
+let nombre = prompt("Hola, déjanos saber... ¿Cuál es tu nombre? 😊");
+
+/*
+  Paso 2:
+  Comprobamos si el nombre ingresado es exactamente "Admin".
+  Si lo es, mostramos un mensaje especial para nuestro administrador.
+  Si no, mostramos un mensaje personalizado (genérico) para nuestro usuario.
+*/
+if (nombre == "Admin") {
+  // Mensaje especial para nuestro administrador...
+  console.log("¡Bienvenid@, has ingresado en tu rol de administrador! 😎");
+} else {
+  // Mensaje genérico para cualquier otro usuario...
+  console.log("Hola " + nombre + ", bienvenid@ a nuestro website. 😉");
+}
+```
+---
+
+## Parte 8: Desafío Final 😎
+#### 8.1 Crea un archivo HTML y vincúlalo con un archivo .js externo. En ese archivo:
+
+- Declara tres variables: nombre, edad, y ciudad.
+- Pide al usuario su nombre, edad y ciudad mediante prompt().
+- Muestra esa información formateada en consola con una frase como:
+`"Hola [nombre], tienes [edad] años y vives en [ciudad]."`
