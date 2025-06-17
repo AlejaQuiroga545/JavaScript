@@ -264,5 +264,5 @@ if (nombre == "Admin") {
 - Muestra esa información formateada en consola con una frase como:
 `"Hola [nombre], tienes [edad] años y vives en [ciudad]."`
 
-➡️ [Mira el resultado final aquí 🥰](https://github.com/AlejaQuiroga545/JavaScript/tree/3166fe6d7d29b03a8a6da5d46abe56386ecab90a/Semana%201/Taller_js_Aleja_Quiroga)
+### ➡️ [Mira el resultado final aquí 🥰](https://github.com/AlejaQuiroga545/JavaScript/tree/3166fe6d7d29b03a8a6da5d46abe56386ecab90a/Semana%201/Taller_js_Aleja_Quiroga)
 
