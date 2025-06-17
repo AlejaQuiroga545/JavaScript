@@ -263,3 +263,5 @@ if (nombre == "Admin") {
 - Pide al usuario su nombre, edad y ciudad mediante prompt().
 - Muestra esa información formateada en consola con una frase como:
 `"Hola [nombre], tienes [edad] años y vives en [ciudad]."`
+
+Puedes verlo aqu+i | https://github.com/AlejaQuiroga545/JavaScript/tree/88ec712448643765224f2b7f496859de240bb527/Semana%201/Taller_js_Aleja_Quiroga
