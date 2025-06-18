@@ -126,3 +126,89 @@ let existe = nombres.includes("Santi");
 console.log (existe)
 ```
 ![image](https://github.com/user-attachments/assets/edadebd4-5285-4afd-bdfb-f89113f1f869)
+
+---
+
+# `For` `For...in` `For...of` 🚀
+
+➡️ **Sin listas** (solo números o strings)
+
+### 1. Imprimir los caracteres de una palabra
+`for...of` para recorrer una palabra letra por letra e imprimir cada letra.
+```javascript
+let text = ("AleDesign")
+
+for (let letra of text) {
+    console.log (letra);
+}
+```
+![image](https://github.com/user-attachments/assets/1bf49738-22a0-46e2-915d-88c0343d1244)
+
+### 2. Contar del 1 al 5 usando for clásico
+Bucle `for` para imprimir los números del 1 al 5.
+```javascript
+for (let n=1;
+    n <= 5; ++n) {
+        console.log(n)
+    }
+```
+`++n` **Prefijo |** Imprime el valor actual y luego se incrementa  
+
+`n++` **Sufijo |** Se incrementa antes e imprime el valor nuevo  
+
+Ambos dan el mismo resultado porque el valor de `n` no se está usando en el incremento, solo en el console.log. Pero si afectaría si la operación la estuviera haciendo directamente en la consola.  
+
+![image](https://github.com/user-attachments/assets/0a26979b-d61f-4fd7-a575-2bfdd3d0cb2a)
+
+
+
+### 3. Mostrar la posición de cada letra en una palabra usando for...in
+`for...in` para recorrer una palabra e imprimir el índice y el carácter en esa posición.
+```javascript
+let text = "AleDesign";
+
+for (let position in text) {
+  console.log (`${position} | ${text[position]}`);
+}
+```
+| Este atributo recorre automáticamente las claves (en este caso, los índices) de cualquier objeto o estructura iterable.  
+
+![image](https://github.com/user-attachments/assets/d898594c-8ad5-4950-a9a0-6a2535337dad)  
+---
+
+➡️ **Con listas** (arrays)
+
+### 4. Recorrer una lista de nombres usando `for...of`
+Dado un array de nombres, imprime "Hola, [nombre]" usando `for...of`.
+```javascript
+let nombres = ["Aleja", "Esteban", "Martin"]
+
+for (let name of nombres) {
+    console.log (`Hola ${name}`)
+}
+```
+![image](https://github.com/user-attachments/assets/46123877-02f3-40e4-86cd-7d4f291f24ca)
+
+
+### 5. Imprimir índices de una lista usando `for...in`
+Usa `for...in` para imprimir los índices de un array de colores.
+```javascript
+let colores = ["Azul", "Rosado", "Púrpura"]
+
+for (let color in colores) {
+    console.log (`${color}`)
+}
+```
+![image](https://github.com/user-attachments/assets/4fd7666f-9ad1-4a15-bd33-108cefb21818)
+
+
+### 6. Imprimir índice y valor de cada número en un array
+Usa `for...in` para obtener el índice y luego acceder al valor en la misma línea.
+```javascript
+let colores = ["Azul", "Rosado", "Púrpura"]
+
+for (let color in colores) {
+    console.log (`${color} | ${colores[color]}`)
+}
+```
+![image](https://github.com/user-attachments/assets/d37f85de-2215-43be-8e89-6d1478cf00be)
