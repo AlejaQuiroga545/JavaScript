@@ -211,4 +211,173 @@ for (let color in colores) {
     console.log (`${color} | ${colores[color]}`)
 }
 ```
-![image](https://github.com/user-attachments/assets/d37f85de-2215-43be-8e89-6d1478cf00be)
+![image](https://github.com/user-attachments/assets/d37f85de-2215-43be-8e89-6d1478cf00be)  
+
+
+---
+
+# Objetos 🔥
+### 1. Crea un objeto persona con las propiedades: nombre, edad y ciudad.
+```javascript
+let persona = {
+    nombre: "Esteban",
+    edad: 20,
+    ciudad: "Bogotá"
+}
+```
+
+### 2. Muestra el valor de una propiedad específica del objeto persona.
+```javascript
+let persona = {
+    nombre: "Esteban",
+    edad: 20,
+    ciudad: "Bogotá"
+}
+
+console.log (persona.nombre)
+```
+![image](https://github.com/user-attachments/assets/1fd38d45-4e6d-4c8c-9743-3ab9f1987282)
+
+
+### 3. Modifica el valor de una propiedad existente en un objeto libro.
+```javascript
+let libro = {
+    titulo: "Bajo la misma estrella",
+    genero: "Novela",
+    autor: "Hazel Grace"
+}
+
+libro.autor = "John Green";
+
+console.log (libro)
+```
+![image](https://github.com/user-attachments/assets/3ce73d3b-810f-4d75-b545-ef64e72b3b0c)
+
+### 4. Agrega una nueva propiedad a un objeto auto.
+```javascript
+let auto = {
+    Marca: "Toyota",
+    Modelo: "Land Cruiser Prado",
+    Color: "Blanco"
+}
+
+auto.Transmision = "Automática";
+console.log (auto)
+```
+![image](https://github.com/user-attachments/assets/549428a2-149b-4cb9-a8f0-b594485b2a44)
+
+### 5. Recorre un objeto estudiante con un bucle y muestra todas sus claves y valores.
+```javascript
+let estudiante = {
+    Nombre_: "Martin",
+    Edad_: 13,
+    Curso_: 905
+}
+
+for (let tipo in estudiante) {
+    console.log (`${tipo} ${estudiante[tipo]}`)
+}
+```
+![image](https://github.com/user-attachments/assets/bd6b0f20-d0ac-4c90-83e3-98f449b833ca)
+
+---
+Práctica
+# Funciones 😎
+
+### 1. Saludo personalizado
+Crea una función llamada `saludar` que reciba un nombre como parámetro y devuelva un saludo del tipo: `"Hola, [nombre]!"`.
+```javascript
+function saludar() {
+   nombre = prompt("¿Cuál es tu nombre? 👀");
+  console.log(`Hola, ${nombre}! 🥰`);
+}
+
+saludar();
+```
+![image](https://github.com/user-attachments/assets/ed66ae5d-f177-433c-8e36-854850da60da) ![image](https://github.com/user-attachments/assets/f3baeefc-8541-43b3-a9b4-d1f9c7fe4879)
+
+
+
+### 2. Suma de dos números
+Escribe una función `sumar` que reciba dos números como parámetros y retorne su suma.
+```javascript
+function sumar() {
+  numero1 = parseFloat(prompt("👀 Primer número que quieras sumar"));
+  numero2 = parseFloat(prompt("Segundo número que quieras sumar 👀"));
+  console.log(`${numero1} + ${numero2} = 🤓 ${numero1 + numero2}`);
+}
+
+sumar();
+```
+![image](https://github.com/user-attachments/assets/80075fb3-9a4e-4c6c-87ce-6eb1e4fbbfbd) ![image](https://github.com/user-attachments/assets/09862a08-2859-41f6-95f8-2dab26efc60c)  
+![image](https://github.com/user-attachments/assets/5b52c334-1030-4d17-9dce-ddc161599964)
+
+
+### 3. Número par o impar
+Crea una función llamada `esPar` que reciba un número y devuelva `true` si es par, o `false` si es impar.
+```javascript
+function esPar() {
+  numero = parseInt(prompt("Hola, por favor ingresa un número 👀"));
+  if (isNaN(numero)) {
+    console.log("🤕 Oops por favor ingresa un número válido.");
+  } else if (numero % 2 === 0) {
+    console.log(`Tu número ${numero} es par. 😊`);
+  } else {
+    console.log(`Tu número ${numero} es impar. 😊`);
+  }
+}
+
+esPar();
+```
+![image](https://github.com/user-attachments/assets/db5e938c-5734-4436-8763-0ab5c617c359) ![image](https://github.com/user-attachments/assets/a33cbeb0-4b7e-4deb-98c6-fd2c08b002bc)
+
+
+### 4. Calcular el área de un rectángulo
+Define una función `areaRectangulo` que reciba `base` y `altura` como argumentos y devuelva el área.
+```javascript
+function areaRectangulo() {
+
+  base = parseFloat(prompt("Ingresa la base de tu rectángulo 👀"));
+  altura = parseFloat(prompt("👀 Ingresa la altura de tu rectángulo"));
+
+  if (!isNaN(base) && !isNaN(altura)) {
+    area = base * altura;
+    console.log(`El área de tu rectángulo es ${area} 😋`);
+
+  } else {
+    console.log("🤕 Oops, por favor ingresa valores válidos.");
+  }
+
+}
+
+areaRectangulo();
+```
+🤔 **¿Qué hace !isNaN(base)**?    
+
+El ! (signo de negación) invierte ese resultado... Así que `!isNaN(base)` significa **base sí es un número válido** ✅  
+
+![image](https://github.com/user-attachments/assets/79ea4629-69aa-446d-b3a4-e270f67e49f2) ![image](https://github.com/user-attachments/assets/0bff2ef9-cdb5-4236-81bb-47f14e62afac)  
+![image](https://github.com/user-attachments/assets/49da140b-80fb-4144-b4bc-5174cede3029)  
+
+
+### 5. Convertir grados Celsius a Fahrenheit
+Escribe una función `celsiusAFahrenheit` que reciba una temperatura en grados Celsius y devuelva el valor en Fahrenheit usando la fórmula:
+`F = C * 1.8 + 32`
+```javascript
+function celsiusAFahrenheit() {
+
+  celsius = parseFloat(prompt("Temperatura en grados Celsius 🌡️"));
+
+  if (!isNaN(celsius)) {
+    fahrenheit = celsius * 1.8 + 32;
+    console.log(`🌡️ ${celsius}°C equivale a ${fahrenheit.toFixed(1)}°F`);
+
+  } else {
+    console.log("Oops, has ingresado un dato inválido 🤕");
+  }
+}
+
+celsiusAFahrenheit();
+```
+![image](https://github.com/user-attachments/assets/ef382188-3309-4a6c-8bad-9c383ec2af85) ![image](https://github.com/user-attachments/assets/8d88f242-e550-4550-a130-1367dfa8d0b0)
+
