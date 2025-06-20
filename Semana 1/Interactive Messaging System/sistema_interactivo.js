@@ -4,16 +4,26 @@ console.log("Hello, welcome to the Interactive Messaging System! ☺️");
 let userName = prompt("Tell me... what is your name? 👀");
 console.log(`➡️ Name: ${userName}`);
 
-let rawAge = prompt("How old are you? 😳");
-console.log(`➡️ Age: ${rawAge}`);
+let rawAge;
+let age;
 
-let age = parseInt(rawAge);
+do {
+    rawAge = prompt("How old are you? 😳");
+    console.log(`➡️ Age entered: ${rawAge}`);
 
-if (isNaN(age)) {
-    const errorMessage = "🤕 Oops, please enter a valid number for your age.";
-    alert(errorMessage);
-    console.error(errorMessage);
-} else if (age < 18) {
+    rawAge = rawAge.trim(); // Remove spaces
+    age = Number(rawAge);   // Convert to number
+
+    if (rawAge === "" || isNaN(age)) {
+        const errorMessage = "🤕 Oops, please enter a valid number for your age.";
+        alert(errorMessage);
+        console.error(errorMessage);
+    }
+
+} while (rawAge === "" || isNaN(age));
+
+// Final message
+if (age < 18) {
     const minorMessage = `Hi ${userName}, you're a minor. Keep learning and enjoying coding! 🥰`;
     alert(minorMessage);
     console.log(minorMessage);
