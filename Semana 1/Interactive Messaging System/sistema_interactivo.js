@@ -1,11 +1,11 @@
-alert("Hello, welcome to the Interactive Messaging System! ⚜️");
-console.log("Hello, welcome to the Interactive Messaging System! ⚜️");
+alert("Hello, welcome to the Interactive Messaging System! ☺️");
+console.log("Hello, welcome to the Interactive Messaging System! ☺️");
 
-let userName = prompt("Tell me... what is your name?");
-console.log(`User entered name: ${userName}`);
+let userName = prompt("Tell me... what is your name? 👀");
+console.log(`➡️ User entered name: ${userName}`);
 
-let rawAge = prompt("How old are you?");
-console.log(`User entered raw age: ${rawAge}`);
+let rawAge = prompt("How old are you? 😳");
+console.log(`➡️ User entered raw age: ${rawAge}`);
 
 let age = parseInt(rawAge);
 
