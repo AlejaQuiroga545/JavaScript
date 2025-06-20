@@ -2,10 +2,10 @@ alert("Hello, welcome to the Interactive Messaging System! ☺️");
 console.log("Hello, welcome to the Interactive Messaging System! ☺️");
 
 let userName = prompt("Tell me... what is your name? 👀");
-console.log(`➡️ User entered name: ${userName}`);
+console.log(`➡️ Name: ${userName}`);
 
 let rawAge = prompt("How old are you? 😳");
-console.log(`➡️ User entered raw age: ${rawAge}`);
+console.log(`➡️ Age: ${rawAge}`);
 
 let age = parseInt(rawAge);
 
