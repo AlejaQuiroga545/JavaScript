@@ -1,0 +1,34 @@
+body{
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    color: #333;
+    font-weight: 300;
+}
+
+.box {
+    background-color: rgb(255, 236, 253);
+    padding: 12px;
+    margin: 15px 5px;
+    width: 300px;
+    border-radius: 15px;
+    transition: all 0.3s;
+
+}
+
+.box:hover{
+    box-shadow:  3px 3px 12px   #e4e4e481;
+    transform: scale(1.03);
+    cursor: default;
+}
+
+#motivation {
+    background-color: rgba(243, 243, 243, 0.74);
+    padding: 5px 20px;
+    box-shadow: 5px 5px 12px #c0c0c08a;
+}
